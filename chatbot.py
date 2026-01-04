@@ -1,30 +1,55 @@
+#Rule Based AI Python ChatBot 
 
-print(" THE PWELCOME TOYTHON CHATBOT")
+import datetime
+import time
 
-print ("you enter bye or exit to end it.")
+name= input("Swagat h, enter your name : ")
+presentHour= datetime.datetime.now().hour
 
-data = {
-    "hi":"hi,what's going on","who are you":"i am a smart chatbot",
-    'who':'i am a chatbot',"how are you":"i am fine, thank you","what is your name":"i am called chatbot",
-    }
+if 5 <= presentHour <= 11: 
+    print("Good morning, ", name)
+elif 11 <= presentHour <= 17:
+    print("Good afternoon, ", name)
+elif 17 <= presentHour <= 20:
+    print("Good evening, ", name)
+else:
+    print("Good night, ", name)
 
-def my_function(user_question):
-    user_question = user_question.lower()
-    for eachkey in data:
-        if eachkey in user_question:
-            return data[eachkey]
-        
-        return "i am not able to tell that yet, i am still in learning mode"
+
+
+print("Namaste! Welcome to Your ChatBot")
+print("You can ask me basic question, Type 'bye' to exit from the bot")
+
+# Chatbot Memory Creation [ dictionary of responses ]
+
+responses = {
+    "hello": "Hi, welcome. How can I help you?",
+    "how are you": "I am very fine. Thank you",
+    "who are you": "I am smart AI chatbot",
+    "motivate me": "Keep going. Every bug of your project makes you a better developer",
+    "happy": "Great to hear that",
+    "functions kya hote hai": "jakar chapter 7 padho"
+} 
+
+# Method/Function to get response of ChatBot 
+
+def getResponseOfBot(userQuestion):
+    userQuestion= userQuestion.lower()
+    for eachKey in responses:
+        if eachKey in userQuestion:
+            return responses[eachKey]
+
+    return "I am not able to tell that yet. I am still in learning mode."    
     
+
+# Take user input 
+
+
 while True:
+    userInput= input("Please ask your question: ")
+    reply= getResponseOfBot(userInput)
+    print("Bot Response: ", reply)
 
-        userinput = input("you: ")
-        reply = my_function(userinput)
-
-        print("Bot: ",reply)
-
-        if "bye" in userinput or "exit" in userinput.lower():
-            print ("Bot : bye have a nice day..!")
-            break
-
-
+    if "bye" in userInput.lower() or "exit" in userInput.lower():
+        print ("have a nice day.")
+        break
