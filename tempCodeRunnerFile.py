@@ -1,0 +1,1 @@
+    print("your generated password is : ",password) 
