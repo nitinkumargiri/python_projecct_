@@ -1,6 +1,8 @@
+# error free calculator.
+print(" WELCOME TO ERROR FREE CAALCULATOR \n")
 def calculator():
     try:
-        num = float(input("enter your first number:"))
+        num = float(input("enter your first number: "))
         num1 = float(input("enter your second number: "))
         
         print("1. addition ")
@@ -18,6 +20,7 @@ def calculator():
             
         elif choice == '3':
             print("Result: ", num * num1)
+            
         elif choice == '4':
             
             try:
