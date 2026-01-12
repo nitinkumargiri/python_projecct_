@@ -52,14 +52,14 @@ while True:
         amount = float(input("enter your withdrawal amount: "))
         account.withdraw(amount)
         
-    # elif choice == 3:
-    #     account.cheak_balance()
+    elif choice == 3:
+        account.cheak_balance()
         
-    # elif choice == 4:
-    #     account.display()
+    elif choice == 4:
+        account.display()
         
-    # elif choice == 5:
-    #     print("thaku for using bank management system.")
-    #     break
-    # else:
-    #     print("Invailed choice! try again")
+    elif choice == 5:
+        print("thaku for using bank management system.")
+        break
+    else:
+        print("Invailed choice! try again")
