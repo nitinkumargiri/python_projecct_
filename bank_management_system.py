@@ -7,16 +7,16 @@ class Bankaccount:
     def deposit(self,amount):
         if amount > 0:
             self.balance += amount
-            print("amount deposited successfully.")
+            print("amount deposited successfully.✅")
         else:
-            print("Invailed amount.")
+            print("Invailed amount.😒")
             
     def withdraw (self,amount):
         if amount <= self.balance:
             self.balance -= amount
-            print("withdrawal successfully..")
+            print("withdrawal successfully..✅")
         else:
-            print("iNSUFFICIENT BALANCE..")
+            print("iNSUFFICIENT BALANCE..😒")
             
     def cheak_balance(self):
         print(f"current balance is {self.balance}")
@@ -28,7 +28,7 @@ class Bankaccount:
         print("balance: ",self.balance)
         
 #main program.
-print("WELCOME TO BANK MANAGEMENT SYSTEM")
+print("🏦🏦WELCOME TO BANK MANAGEMENT SYSTEM 🏦🏦")
 
 name = input("enter your name: ")
 acc_no = input("enter your account number: ")
@@ -59,7 +59,7 @@ while True:
         account.display()
         
     elif choice == 5:
-        print("thaku for using bank management system.")
+        print("thaku for using bank management system.🙏🙏")
         break
     else:
         print("Invailed choice! try again")
