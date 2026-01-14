@@ -17,7 +17,7 @@ class library:
     def issue_book(self,book):
         if book in self.book:
             self.book.remove(book)
-            print(f"{book} issued sucessfully.")
+            print(f"{book} issued sucessfully.✅")
         else:
             print("book arae not available.")
             
@@ -27,15 +27,36 @@ class library:
         
 library = library()
 while True:
-    print("WELCOME TO LIBARARY")
+    print("📚📙WELCOME TO LIBARARY📙📚")
     print("1. Add book")
-    print("display book")
+    print("2. display book")
     print("3. Issued book")
-    print("Return book ")
-    print("5.exit")
+    print("4. Return book ")
+    print("5. exit")
     
     choice = int (input("enter your choice: "))
     if choice == 1: 
         book = input("Add book: ")
         library.add_book(book)
+        
+    elif choice == 2:
+        library.display_book()
+    
+    elif choice == 3:
+        book = input("eter your issued book: ")
+        library.issue_book(book)
+        
+    elif choice == 4:
+        book = input("enter those book do you want to return: ")
+        library.return_book(book)
+        
+    elif choice == 5:
+        print("GOOD BYE..👋👋")
+        break
+    
+    else:
+        print("Invailed choice ❌❌")
+        
+        
+        
     
