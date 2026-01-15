@@ -14,7 +14,7 @@ class Bankaccount:
     def withdraw (self,amount):
         if amount <= self.balance:
             self.balance -= amount
-            print("withdrawal successfully..✅")
+            print("withdrawal successfully..✅✅✅")
         else:
             print("iNSUFFICIENT BALANCE..😒")
             

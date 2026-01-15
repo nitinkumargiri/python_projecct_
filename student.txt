@@ -1,0 +1,5 @@
+20241094 nitin  80
+python -u "c:\Users\manoj\OneDrive\Documents\python_project\stuent_record_file.py"  
+38373 nitin 60
+555555 fjgh 56
+6565 kumar 90
