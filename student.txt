@@ -3,3 +3,4 @@ python -u "c:\Users\manoj\OneDrive\Documents\python_project\stuent_record_file.p
 38373 nitin 60
 555555 fjgh 56
 6565 kumar 90
+58558 nitin 45

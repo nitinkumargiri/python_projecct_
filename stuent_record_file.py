@@ -9,7 +9,7 @@ f.close()
 
 print("record saved successfully.✅")
 
-print("STUDENT RECORDS")
+print("----STUDENT RECORDS----")
 f = open("student.txt", "r")
 print(f.read())
 f.close
